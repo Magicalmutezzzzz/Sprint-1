@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    transition:0.3s;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 50px;
+
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+}
+
+.right-controls{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(images/Body_bg.png) no-repeat
+    center/cover;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.1rem;
+}
+
+.cta-btn{
+    padding:12px 25px;
+    border:none;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+    border-radius:6px;
+
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:scale(1.05);
+    background:#0056b3;
+}
+
+.services{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.service-grid{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card i{
+    font-size:40px;
+    color:#007bff;
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+
+.socials{
+    margin-top:10px;
+}
+
+.socials i{
+    margin:0 10px;
+}
+
+/* Css for Dark Theme*/
+
+.dark-theme{
+    background:#111;
+    color:rgb(183, 235, 14);
+}
+
+.dark-theme .navbar{
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme .nav-links a{
+    color:rgb(184, 226, 16);
+}
+
+.dark-theme .card{
+    background:#1e1e1e;
+}
+
+/* Mobile View css*/
+
+@media(max-width:768px){
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:20px;
+        background:white;
+        padding:15px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
