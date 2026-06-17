@@ -8,4 +8,4 @@
 
 4. Css ideas for Mobile responsiveness
 
-5. Create png logo for Prodesk IT
+5. Create png logo for Prodesk IT(logo creation)
