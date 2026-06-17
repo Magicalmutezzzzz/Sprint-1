@@ -1,14 +1,5 @@
 # Prodesk IT Landing Page
 
-## Features
-- Responsive Navbar
-- Hero Section
-- Services Cards
-- Footer
-- Dark Mode
-- Sticky Navbar
-- Mobile Hamburger Menu
-
 ## Live Demo
 https://prodesk-sprint-1.vercel.app/
 
